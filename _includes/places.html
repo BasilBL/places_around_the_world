@@ -1,0 +1,33 @@
+
+
+
+<style type="text/css">
+    .case_study_img {
+        width:100%;
+        object-fit: cover;
+        height:200px;
+        padding:1em 3em;
+    }
+</style>
+<div id="service-block" class="services-block style-one" style="padding-bottom: 0px;padding-top:50px;">
+    <div class="row" style="max-width: 1300px;margin:auto;">
+        {% for post in site.posts %}
+        <!-- dont show current post -->
+        {% if post.url != page.url %} 
+        <div class="col-lg-4">
+            <a href="{{ post.url }}">
+                <div class="row">
+            	<img class="case_study_img" src="{{ post.related_image | absolute_url }} " alt="aaa">
+            </div>
+            <div class="row" style="text-align:center;justify-content: center;">
+                {{ post.title }}
+            	
+            </a>
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+        </div>
+    </div>
+    {% endif %}
+        {% endfor %}
+    <!-- /.container -->
+</div>
+<!--~~./ end services block ~~

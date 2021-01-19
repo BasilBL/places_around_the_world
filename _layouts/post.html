@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body data-spy="scroll" data-offset="170" data-target=".navigation-area">
+    <!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+    <div class="site-content">
+        {% include nav.html %}
+        <div id="hero-block" class="frontpage-banner-section frontpage-banner-style-three" style="padding-top:150px;padding-bottom:40px;">
+            <div class="container" style="text-align: center;padding-bottom: 50px;">
+                <h1 class="hero-title" style="margin-bottom: 0px;">{{ page.title }}</h1>
+                <h3>{{ page.subtitle }}</h3>
+                <p>{{ page.first_paragraph }}</p>
+            </div>
+            <div>
+            	<div class="row" >
+            		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 20px 2em;">
+            			<img class="case_study_img" src="{{ page.img_1 | absolute_url }} " alt="aaa">
+            		</div>
+            		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 20px 2em;">
+            			<img class="case_study_img" src="{{ page.img_2 | absolute_url }} " alt="aaa">
+            		</div>
+            	</div>
+            	<div class="container" style="padding-top:60px;">
+            		<h3>Our Findings</h3>
+                <img src="{{ page.related_image | absolute_url }}" style="float:right;padding: 0px 15px;max-width: 1000px;width:50%" /><p>{{ content }}</p>
+                </div>
+            </div>
+        </div>
+        <h3 style="text-align: center; padding-top: 100px;">More Places</h3>
+        {% include places.html %}
+        {% include subscribe.html %}
+
+        {% include footer.html %}
+    </div>
+    {% include main_js.html %}
+</body>
+
+</html>

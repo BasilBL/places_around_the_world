@@ -1,9 +1,8 @@
-
-		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 Start About Us Block
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-		<div id="about-block" class="about-us-block style-one" style="padding-top:0em;padding-bottom:2em;">
-<!-- 			<div class="element-group">
+<div id="about-block" class="about-us-block style-one" style="padding-top:0em;padding-bottom: 0px!important;">
+    <!-- 			<div class="element-group">
 				<div class="element one">
 					<img src="assets/images/element/rectangle1.png" alt="Element">
 				</div>
@@ -11,17 +10,89 @@
 					<img src="assets/images/element/circle3.png" alt="Element">
 				</div>
 			</div> -->
-			<div class="container">
-				<!-- Title Row -->
-				<div class="row align-items-center" style="justify-content: center;">
-					<p style="padding:3em 3em;text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<img src="assets/imgs/world.jpg" style="max-width: 90%;">
+    <div class="container">
+        <!-- Title Row -->
+        <div class="row align-items-center" style="justify-content: center;padding: 20px; background-color: #ffffffb8;border-radius: 10px;">
+            <h2>About this Project</h2>
+            <p style="padding:1em 10px;text-align:left;font-size: 16px;font-weight: normal;"><b>Placemaking is the process</b> of breathing life into communities by creating vibrant public spaces. Pulling together urban planning, design, and management, these spaces attract tourists and locals alike, encouraging them to actively interact with each other and their environment.
+                <br><br>
+                This project is meant to provide students, researchers and planning professionals with the data to analyze public spaces from a quantitative, yet holistic angle. Our partners involved with this project share a belief that listening to and building around communities builds stronger solutions.
+                <br><br>
+                <b>By classifying hundreds of thousands of reviews using AI</b> -- of public spaces and surrounding retail locations -- this dataset allows researchers to quantify traditionally qualitative metrics regarding public spaces across the world.
+            </p>
+        </div>
+    </div>
+            <div style="background-image:url('{{site.baseurl}}/assets/imgs/map_2.png');max-width: 100%;width:100vw;max-height:400px;height:400px;background-size:contain;margin-top: 4%;">
+            </div>
 
-					<!-- /.col-lg-7 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</div>
-		<!--~~./ end about us block ~~-->
+            <!-- /.col-lg-7 -->
+
+<div class="container" style="padding-bottom: 50px;">
+        <div class="row align-items-center" style="justify-content: center;">
+        	<button type="button" class="collapsible" style="color:white;text-align: center;font-size: 16px;max-width: 700px;margin-top:3%;">Click Here to View All Locations Included in Dataset ▼</button>
+<div class="content-in">
+            <p>Brooklyn Bridge Park (NYC, USA) ● Skanderbeg Square (Tirana, Albania) ● Jordaan (Amsterdam, Netherlands) ● Cycling, Through Water (Genk, Belgium) ● Berliner Innenstadt (Berlin, Germany) ● Adult Playground (Boston, USA) ● Vila Madalena (San Paulo, Brazil) ● Al-Azhar Park (Cairo, Egypt) ● Cloud Gate (Chicago, Illinois) ● Wusong Wetland Forest Park (Shanghai, China) ● West Lake (Hangzhou, China) ● Spiral Treetop Walkway (Copenhagen, Denmark) ● Level Up (Rijeka, Croatia) ● One Arts Plaza (Dallas, USA) ● Larimer Square (Denver, USA) ● L'Ombriere de Norman Foster (Marseille, France) ● National Garden (Athens, Greece) ● Discovery Green (Houston, Texas) ● Jai Jagat Theatre (Ahmedabad, India) ● National War Memorial (Delhi, India) ● Naqsh-e Jahan Square (Isfahan, Iran) ● Piazza Maggiore (Bologna, Italy) ● Hakone Open-Air Museum (Hakone, Japan) ● Tenri Station Plaza CoFuFun (Tenri, Japan) ● Streets of Korogocho (Nairobi, Kenya) ● Luang Prabang Cycling Bike Streets (Luang Prabang, Laos) ● Old Town of Lijiang (Lijiang, China) ● Canary Wharf (London, UK)
+        </p>
+    </div>
+    </div>
+        <!-- /.row -->
+
+    <!-- /.container -->
+</div>
+<!--~~./ end about us block ~~-->
+
+
+<style type="text/css">
+	.li-inline {
+		padding-right: 16px;
+	}
+	li::marker {
+		margin:6px 6px;
+	}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ECFBFF;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content-in {
+  padding: 15px 18px;
+  display: none;
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+padding: 20px; background-color: #ffffffb8;
+border-radius: 10px;
+}
+</style>
+
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>

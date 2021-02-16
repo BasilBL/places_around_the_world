@@ -78,12 +78,17 @@ html {
 }
 
 body {
-  background-color: white;
+  /*background-color: #ecfbff;*/
+  min-height: 100%;
+      background: linear-gradient(
+  257deg
+  , rgb(241 253 249 / 91%), rgb(239 255 254 / 91%)), url(/assets/imgs/park.jpg);
+      background-size: cover;
   font-family: "Muller", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5em;
-  color: #676767;
+  color: #181818;
 }
 @media only screen and (max-width: 575px) {
   body {
@@ -2613,7 +2618,7 @@ body:not(.buddypress) .article-content table th {
   z-index: 999;
   font-size: 20px;
   border-radius: 50%;
-  background-color: #c8da43;
+  background-color: #4d6fc1;
 }
 .topbutton.btn-show {
   opacity: 1;
@@ -3591,7 +3596,7 @@ input::-moz-focus-inner {
 }
 .btn-primary.btn-gradient-45 {
   background: -webkit-linear-gradient(305deg, #c8da43, #81b252);
-  background: linear-gradient(145deg, #c8da43, #81b252);
+  background: linear-gradient(135deg, #4ec0cb, #24a03f)
 }
 
 .form-group-btn {
@@ -4345,7 +4350,7 @@ input[type="radio"]:checked + label:before {
   display: none;
 }
 #sticky-header.active .site-header {
-  background-color: white;
+  background-color: #ecfbff;
   box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.15);
   position: relative;
   display: block;
@@ -10204,7 +10209,7 @@ a:hover, a:active {
 .about-us-block.style-one {
   position: relative;
   padding-top: 195px;
-  padding-bottom: 235px;
+  /*padding-bottom: 235px;*/
 }
 .about-us-block.style-one img{
   margin: 50px 0;
@@ -12079,7 +12084,7 @@ a:hover, a:active {
 # Footer-block
 --------------------------------------------------------------*/
 .site-footer {
-  padding-bottom: 90px;
+  padding-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
   .site-footer {
@@ -12092,7 +12097,7 @@ a:hover, a:active {
   }
 }
 .site-footer.footer-default-bg {
-  background-color: #F6F8FE;
+  background-color: #303335;
 }
 .site-footer.pd-t-100.footer-default-bg{
   padding-top: 70px;
@@ -12223,3 +12228,5 @@ a:hover, a:active {
     overflow: hidden;
     transition: height .25s;
 }
+
+

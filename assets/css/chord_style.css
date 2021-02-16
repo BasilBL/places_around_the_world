@@ -1,0 +1,187 @@
+
+
+@media only screen and (max-width:1000px) {
+#chart_placeholder {
+    text-align: center;
+    /*float:right*/
+    display: block;
+    position: relative;
+    left: -20%;
+    color:#fff;
+    /*width: 750px;*/
+    /*height: 830px;*/
+}
+}
+@media only screen and (min-width:1000px) and (max-width:1524px) {
+#chart_placeholder {
+    text-align: center;
+    /*float:right*/
+    display: block;
+    position: relative;
+    left: -20%;
+    color:#fff;
+    /*width: 750px;*/
+    /*height: 830px;*/
+}
+}
+
+@media only screen and (min-width:1524px) {
+#chart_placeholder {
+    text-align: center;
+    /*float:right*/
+    display: block;
+    position: relative;
+    left: -50%;
+    color:#fff;
+    /*width: 750px;*/
+    /*height: 830px;*/
+}
+}
+
+
+/*
+.dependencyWheel {
+    font: 10px sans-serif;
+}*/
+#circle circle {
+    fill: none;
+    pointer-events: all;
+}
+path.chord {
+    stroke: #000;
+    stroke-width: .10px;
+    transition: opacity 0.3s;
+}
+ #circle:hover path.fade {
+    opacity: 0;
+}
+
+/*text is regions name only on chord diagram and scroll text*/
+text {
+    fill: black;
+    font-family: Arial Narrow,Arial,sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+svg {
+    font-size: 10px;
+    color: green;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.yearbuttons{/*area*/
+    float: left;
+    margin-right: 50px;
+    width: 400px;
+}
+button{/*this are the year buttons*/
+    background: linear-gradient(135deg, #4ec0cb, #24a03f);
+    color: white;
+    font-size : 14px;
+    font-family: "Muller", sans-serif;
+    border-color: #69d3dd;
+    border-radius: 10px;
+    border-style: solid;
+    cursor:pointer;
+    border-width: 0.5px;
+}
+.current{
+    background: #f7feff;
+    color: #333;
+    font-size : 14px;
+    font-family: "Muller", sans-serif;
+    border-color: #73d4c0;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#legend {/*regions*/
+    float:left;
+    font-size: 14px;
+    width: 215px;
+} 
+/*regions as well*/
+table.table1{
+        
+}    
+/*countries*/
+table.table2 {
+    position: absolute;
+    top:180px;
+    left:1050px;
+    white-space: nowrap;
+    border-collapse: collapse;
+    display: none;
+}
+table.table2 td {
+    font-family: verdana;
+    font-size: 14px;
+    float: left;
+}
+p {
+   font-family: verdana; 
+   font-size: 80%;
+   text-align: center;
+}
+.link {
+    margin-left: 30px;
+    width:300px;
+    height:50px;
+    float: left;
+}
+.scroll {
+    position:absolute; /*on top of vis*/
+    top:0;
+    left:0px;
+}
+.scroll2 {
+    float:left;
+}
+/* unvisited link */
+a.one:link {
+    color:  #3CBCBC;
+    text-decoration: none;
+}
+
+/* visited link */
+a.one:visited {
+    color: #54C571;
+}
+
+/* mouse over link */
+a.one:hover {
+    color: #736AFF;
+}
+
+/* selected link */
+a.one:active {
+    color: #3CBCBC;
+}
+/*this are the links to the table not to other pages*/
+/* mouse over link */
+a.two:hover + table {
+    display: table;
+    color: black;
+}
+/* unvisited link */
+a.two:link {
+    font-family: verdana;
+    color: black;
+    text-decoration: none;
+}
+/* visited link */
+a.two:visited {
+    font-family: verdana;
+    color: black;
+}
+/* mouse over link */
+a.two:hover {
+    font-family: verdana;
+    color: gray;
+}
+/* selected link */
+a.two:active {
+    font-family: verdana;
+    color: black;
+} 

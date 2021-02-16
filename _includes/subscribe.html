@@ -1,18 +1,90 @@
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Start Call To Action
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div id="call-to-action" class="call-to-action bg-image bg-overlay-gradient"
-            style="background-image: url('/assets/images/bg/basil_bg.png');margin-top: 100px;max-height: 400px;padding: 80px 0;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center text-white">
-                        <h2 class="call-to-title">Sign up for early access today.</h2><!-- /.call-to-title -->
-                        <div class="action-btn-group">
-                            <!-- <a href="#" class="btn btn-default btn-white">Sign up for early access for free</a> -->
-                            <a class="btn btn-default btn-white typeform-share button" href="https://form.typeform.com/to/nnVNayJB?typeform-medium=embed-snippet" data-mode="popup" data-size="100" target="_blank">Sign Up</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                        </div><!-- /.action-btn-group -->
-                    </div><!-- /.col-lg-8 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div>
-        <!--~~./ end call to action ~~-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Start Call To Action
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="call-to-action" class="call-to-action bg-image bg-overlay-gradient" style="background-image: url('/assets/imgs/brooklyn.png');margin-top: 100px;min-height: 600px;padding: 80px 0;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 text-left text-white" style="width:unset;">
+                <h2 style="font-size: 2.8em;">See the data for yourself.</h2>
+                <h4 style="padding-top:30px;font-size: 20px;">What's included in the dataset:</h4>
+                <ul role="list" style="text-align: left;padding:0px 0px 0px 20px;font-size: 16px;">
+                    <li>Perception Data Files (CSV)</li>
+                    <li>12 Perception Topics</li>
+                    <li>40+ Public Spaces Globally</li>
+                </ul>
+            </div>
+            <div class="col-lg-8 col-md-8 text-left text-white" style="width:unset;">
+                <div class="action-btn-group">
+                    <script type="text/javascript">
+                    var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='npr.org';}"></iframe>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJ9Ubf2HXBWdhrsnhxPcHcBMIt7HiFbPcEAy_acup0dXDFBA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="row" >
+                            <div class="col-md-6 form-div-box">
+                                <label class="form-label">FIRST NAME *</label>
+                                <input class="form-box" type="text" placeholder="" name="entry.631875700" required>
+                            </div>
+                            <div class="col-md-6 form-div-box">
+                                <label class="form-label">LAST NAME *</label>
+                                <input class="form-box" type="text" placeholder="" name="entry.947297282" required>
+                            </div>
+                            <div class="col-md-6 form-div-box">
+                                <label class="form-label">WORK EMAIL *</label>
+                                <input class="form-box" type="text" placeholder="" name="entry.215774902" required>
+                            </div>
+                            <div class="col-md-6 form-div-box">
+                                <label class="form-label">ORGANIZATION</label>
+                                <input class="form-box" type="text" placeholder="" name="entry.1927509251">
+                            </div>
+                            <div class="col-md-6 form-div-box">
+                                <label class="form-label">PROFESSION</label>
+                                <input class="form-box" type="text" placeholder="" name="entry.1406647739">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <button class="form-button" type="submit" onClick="RedirectFormToPage()">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- /.action-btn-group -->
+            </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+
+<style type="text/css">
+    .form-label {
+        color: white;
+    }
+    .form-box {
+        background-color: #393836;
+        border-color: #d0cfcb;
+        border-width: 2px;
+        border-style: solid;
+        transition: border-color .2s ease-in-out;
+        color: #fffefc;
+        font-size: 16px;
+        font-weight: 300;
+        cursor: text;
+        padding: 5px 0px 5px 10px;
+        min-width: 90%;
+
+    }
+    .form-div-box {
+        padding:15px;
+        width:unset;
+
+    }
+    .form-button {
+        background: #fffefc;
+        color: #333;
+        min-width: 100%;
+        border-color: #fffefc;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 300;
+        min-height: 40px;
+    }
+</style>

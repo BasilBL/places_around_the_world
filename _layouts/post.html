@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body data-spy="scroll" data-offset="170" data-target=".navigation-area">
+    <!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+    <div class="site-content">
+        {% include nav.html %}
+        <div id="hero-block" class="frontpage-banner-section frontpage-banner-style-three" style="padding-top:150px;padding-bottom:0px;">
+            <div class="container" style="text-align: center;padding-bottom: 10px;">
+                <h1 class="hero-title" style="margin-bottom: 0px;">{{ page.title }}</h1>
+                <h3>{{ page.subtitle }}</h3>
+                <!-- <p>{{ page.first_paragraph }}</p> -->
+            </div>
+            <div>
+<!--             	<div class="row" >
+            		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 30px 2em;">
+            			<img class="case_study_img" src="{{ page.img_1 | absolute_url }} " alt="aaa">
+            		</div>
+            		<div class="col-lg-6 col-md-6 col-sm-6" style="padding: 30px 2em;">
+            			<img class="case_study_img" src="{{ page.img_2 | absolute_url }} " alt="aaa">
+            		</div>
+            	</div> -->
+                <div class="container" style="background-color: #ffffffd4;padding:2px 10px 30px 10px">
+            	<div class="findings" style="padding-top:60px;width: 80%; margin: auto;">
+            		<!-- <h3>Our Findings</h3> -->
+                
+                    <p style="display:inline;text-align: left;font-size:16px;"> {{ content }} </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h3 style="text-align: center; padding-top: 150px;">More Places</h3>
+        {% include places.html %}
+        {% include subscribe.html %}
+
+        {% include footer.html %}
+    </div>
+    {% include main_js.html %}
+</body>
+
+</html>
+
+<style type="text/css">
+    p {
+        font-size: 14px!important;
+        text-align: left!important;
+    }
+    a {
+        color:#c418bc;
+    }
+</style>

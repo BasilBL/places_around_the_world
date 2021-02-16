@@ -1,0 +1,55 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Start Chord diagram
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="{{site.baseurl}}/assets/css/chord_style.css" rel="stylesheet" type="text/css">
+<div class="work-brand-block style-three aligncenter" style="margin-top:0px;">
+    <div class="container">
+        <div class="row" style="margin-top:0px;overflow: visible">
+
+            <div class="col-md-10 col-lg-10">
+
+                <div class="details">
+                    <div id="chart_placeholder"></div>
+                    <!-- <h1>Placemaking<br>by Topics</h1> -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-2 col-sm-12 col-xs-12">
+                <div id="yearbuttons">
+
+                    <button id="Atmosphere" class="current">Atmosphere</button>
+                    <button id="Cleanliness" class="">Cleanliness</button>
+                    <button id="Couple" class="">Couple</button>
+                    <button id="Family" class="">Family</button>
+                    <button id="Food_Quality" class="">Food Quality</button>
+                    <button id="Live_Music" class="">Live Music</button>
+                    <button id="Opening_Hours" class="">Opening Hours</button>
+                    <button id="Parking" class="">Parking</button>
+                    <button id="Price" class="">Price</button>
+                    <button id="Public_Transportation" class="">Public Transportation</button>
+                    <button id="Staff" class="">Staff</button> <button id="Wait_Times" class="">Wait Times</button>
+                </div>
+                                                <div style="margin: auto;text-align: left; padding-top: 20px;">
+            <p style="text-align: left;font-weight: 600;">Hover over a location to see its perception breakdown.
+                <br><br>
+            Best viewed on desktop.</p>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+.details {}
+</style>
+<!--This script is to highlight each button while on it-->
+<script type="text/javascript">
+$('#yearbuttons button').on('click', function() {
+    $('button.current').removeClass('current');
+    $(this).addClass('current');
+});
+</script>
+<script type="text/javascript" src="{{site.baseurl}}/assets/chordal_diagram/chord.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

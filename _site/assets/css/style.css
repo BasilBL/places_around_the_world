@@ -82,7 +82,7 @@ body {
   min-height: 100%;
       background: linear-gradient(
   257deg
-  , rgb(241 253 249 / 91%), rgb(239 255 254 / 91%)), url(/assets/imgs/park.jpg);
+  , rgb(241 253 249 / 85%), rgb(239 255 254 / 85%)), url(/assets/imgs/park.jpg);
       background-size: cover;
   font-family: "Muller", sans-serif;
   font-size: 16px;
